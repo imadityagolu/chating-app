@@ -39,8 +39,10 @@ const Login = () => {
         <input name="password" type="password" placeholder="Password" value={form.password} onChange={handleChange} required /><br />
         <button type="submit">Login</button>
       </form>
-      {error && <div style={{ color: 'red' }}>{error}</div>}
+      <br/><br/>
       <Link to="/register">Don't have an account? Register</Link>
+      <br/>
+      {error && <div style={{ color: 'red' }}>{error}</div>}
     </div>
   );
 };
